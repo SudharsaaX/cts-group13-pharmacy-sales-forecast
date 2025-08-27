@@ -12,6 +12,43 @@ The **Pharmaceutical Sales Forecast Dashboard** is a Streamlit-based web applica
 - **Customizable Forecast Horizon**: Users can adjust the forecast period as needed  
 - **Data Export**: Download forecast results for further offline analysis  
 
+## Detailed Website Structure and Functionality
+
+### Main Webpage Structure
+The website serves as a comprehensive dashboard for monitoring and managing our stock inventory. It features a clean, intuitive interface that prioritizes usability and real-time data visibility.
+
+### Sidebar Navigation
+The sidebar provides quick access to all major sections:
+- Dashboard overview
+- Stock management
+- Reporting tools
+- User settings
+
+The navigation includes collapsible menus to maintain a clean layout while keeping all features accessible.
+
+### Dashboard Features
+The central dashboard displays:
+- Real-time stock levels with color-coded indicators
+- Key performance metrics
+- Quick-action buttons for common tasks
+- Alert notifications for low stock or urgent updates
+
+### Stock Update System
+This feature allows users to:
+- Add new inventory items with complete details
+- Modify existing stock quantities
+- Track stock movement history
+- Set automatic reorder thresholds
+
+All changes are instantly reflected across the system.
+
+### Preview Table Functionality
+The interactive table provides:
+- Sortable columns for easy data organization
+- Filter options to focus on specific items
+- Quick-edit capabilities without leaving the view
+- Export options for reports
+
 ## Screenshots  
 
 ### Prophet Monthly Forecast  
