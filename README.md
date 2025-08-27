@@ -14,14 +14,14 @@ The **Pharmaceutical Sales Forecast Dashboard** is a Streamlit-based web applica
 
 ## Screenshots  
 
-### Dashboard Overview  
-![Dashboard Overview](screenshots/dashboard_overview.png)  
-
 ### Prophet Monthly Forecast  
-![Prophet Monthly](screenshots/prophet_monthly.png)  
+![Prophet Monthly](screenshots/Prophet-Dashboard.png)  
 
 ### XGBoost Weekly Forecast  
-![XGBoost Weekly](screenshots/xgboost_weekly.png)  
+![XGBoost Weekly](screenshots/Xgboost-Dashboard.png)  
+
+### Dataset Updation  
+![Dataset Updation](screenshots/dataset-updation.png)  
 
 ## Installation
 
