@@ -969,17 +969,9 @@ else:
     if weekly_df.empty:
         st.sidebar.error(f"Weekly data file not found or empty: {XGB_DATA}")
 
-    st.sidebar.markdown("<div class='sidebar-label'>Number of lag features (per series)</div>", unsafe_allow_html=True)
-    lags = st.sidebar.slider("",
-                             min_value=1, max_value=6, value=4, key="lags_slider")
-
     st.sidebar.markdown("<div class='sidebar-label'>Forecast horizon (weeks)</div>", unsafe_allow_html=True)
     forecast_horizon_weeks = st.sidebar.slider("",
                                               min_value=1, max_value=52, value=12, key="forecast_weeks")
-
-    st.sidebar.markdown("<div class='sidebar-label'>Number of Forecast Iterations</div>", unsafe_allow_html=True)
-    n_iters = st.sidebar.slider("",
-                               min_value=1, max_value=5, value=3, key="n_iters")
 
 # ---------------- Stock update toggle (styled red + black text) ----------------
 # This CSS targets both the "Stock Update" sidebar button and the "Submit Update" form button,
@@ -991,8 +983,8 @@ st.markdown(
     /* Primary selector for the Stock Update sidebar button (aria-label equals the button label) */
     button[aria-label="Stock Update"] {{
         background: {THEME_BLUE} !important;
-        color: #000000 !important;                     /* black text inside button */
-        -webkit-text-fill-color: #000000 !important;   /* ensure on webkit browsers */
+        color: #000000 !important;                     
+        -webkit-text-fill-color: #000000 !important;   
         font-weight: 800 !important;
         padding: 10px 14px !important;
         border-radius: 10px !important;
@@ -1250,6 +1242,9 @@ else:
                 medicine_weekly = categories[0]
             else:
                 medicine_weekly = medicine
+
+            lags = 4
+            n_iters = 3
 
             df_prep = prepare_data_xgb(weekly_df, categories, lags=lags)
             if df_prep.empty:
